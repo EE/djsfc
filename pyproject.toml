@@ -13,6 +13,7 @@ python = "^3.12"
 flake8 = "*"
 flake8-pyproject = "*"
 flake8-isort = "*"
+pytest = "*"
 
 [build-system]
 requires = ["poetry-core"]
@@ -29,3 +30,6 @@ lines_after_imports = 2
 # 5 = Hanging Grid Grouped
 multi_line_output = 5
 include_trailing_comma = true
+
+[tool.pytest.ini_options]
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
