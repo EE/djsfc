@@ -9,6 +9,15 @@ readme = "README.md"
 python = "^3.12"
 
 
+[tool.poetry.group.dev.dependencies]
+flake8 = "*"
+flake8-pyproject = "*"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+ignore = [
+    "E501",  # line too long
+]
