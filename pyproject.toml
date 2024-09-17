@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "djsfc"
+package-mode = false
+description = ""
+authors = ["Jan Rydzewski <flegmer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
