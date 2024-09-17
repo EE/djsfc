@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "djsfc"
-package-mode = false
+version = "0.1.0"
 description = ""
 authors = ["Jan Rydzewski <flegmer@gmail.com>"]
 readme = "README.md"
