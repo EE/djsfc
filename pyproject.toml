@@ -12,6 +12,7 @@ python = "^3.12"
 [tool.poetry.group.dev.dependencies]
 flake8 = "*"
 flake8-pyproject = "*"
+flake8-isort = "*"
 
 [build-system]
 requires = ["poetry-core"]
@@ -21,3 +22,10 @@ build-backend = "poetry.core.masonry.api"
 ignore = [
     "E501",  # line too long
 ]
+
+[tool.isort]
+skip_gitignore = true
+lines_after_imports = 2
+# 5 = Hanging Grid Grouped
+multi_line_output = 5
+include_trailing_comma = true
